@@ -4,7 +4,7 @@ Morula is a secure replacement of Zygote to fortify weakened ASLR on Android.
 
 # Paper
 
-- [From Zygote to Morula: Fortifying Weakened ASLR on Android](http://www.cc.gatech.edu/~blee303/paper/morula.pdf), IEEE Symposium on Security and Privacy (Oakland) 2014
+- [From Zygote to Morula: Fortifying Weakened ASLR on Android](http://www.cc.gatech.edu/~blee303/paper/morula.pdf), published in IEEE Symposium on Security and Privacy (Oakland) 2014.
 
 # How to download Android and patch/build Morula
 Morula makes changes on three different repositories of Android 4.2.1, and forked github repositories for Morula are
@@ -29,7 +29,9 @@ $ (cd frameworks/base && git remote add github-morula git@github.com:lifeasageek
 
 ### Download the vendor binaries
 
-### Build (Galaxy Nexus, maguro)
+See https://developers.google.com/android/nexus/drivers for more details.
+
+### Build (for Galaxy Nexus, maguro)
 ```sh
 $ . build/envsetup.sh
 $ lunch full_maguro-userdebug
