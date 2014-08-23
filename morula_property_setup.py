@@ -10,12 +10,12 @@ def usage(parser):
     
 def parseArg():
     parser = OptionParser()
-    parser.add_option("-m", "--morula", help = "Enable Morula model")
-    parser.add_option("-z", "--zygote", help = "Enable Zygote model")
-    parser.add_option("-w", "--wrap",   help = "Enable Wrap model")
+    parser.add_option("-z", "--zygote", help = "Enable Zygote model", nargs=0)
+    parser.add_option("-w", "--wrap",   help = "Enable Wrap model", nargs=0)
+    parser.add_option("-m", "--morula", help = "Enable Morula model", nargs=0)
     
-    parser.add_option("-d", "--demand", help = "(optimization) on-demand preloading")
-    parser.add_option("-n", "--native", help = "(optimization) randomize only native apps")
+    parser.add_option("-d", "--demand", help = "(optimization) on-demand preloading", nargs=0)
+    parser.add_option("-n", "--native", help = "(optimization) randomize only native apps", nargs=0)
     
     (opts, args) = parser.parse_args()
 
